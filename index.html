@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 
     <!--<script defer src="css/fontawesome/fontawesome-all.min.js"></script>-->
-   <!-- <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700|Overpass:400,600,700,800" rel="stylesheet"> --> 
+   <!-- <link href="https://fonts.googleapis.com/css?family=Overpass+Mono:400,700|Overpass:400,600,700,800" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/scrolldownarrow.css">
 
@@ -109,13 +109,10 @@
                <div class="col"></div>
                 <div class="col-10"> 
                     <div class="row">
-                        <div class="col-9">
-
-
-                        <div class="row">
-                            <div class="col-sm-4">
-
-                                <h1 class="section-header">About Me</h1>
+                        <div class="col-9"> 
+                            <div style = "position:relative; left:200px;">
+                               
+                             <h1 class="section-header">About Me</h1>
 
 
                             <!--<hr>-->
@@ -189,7 +186,7 @@
                     <div class="portfolio-sorting">
                         <span><a href="#" data-group="all" class="active">All</a></span>
                         <!--<span><a href="#" data-group="showcase">My favorite</a></span>-->
-                        <span><a href="#" data-group="award">Award-Winning Projects</a></span>
+                        <span><a href="#" data-group="award">Awards</a></span>
                         <span><a href="#" data-group="personal">Personal Projects</a></span>
                         <span><a href="#" data-group="misc">Misc.</a></span>
                     </div>
@@ -204,7 +201,18 @@
   <!-- Kinect Checkers -->
                         <li class="row portfolio-item" data-groups='["award"]'>
                             <a data-popup-open="kinectcheckers" href="#">
-                                <img src="images/kinectcheckers.png" alt="Kinect Checkers" class="img-responsive portfolio-img">
+                                
+                        <div class="col-3">
+                            <style>
+                                img {
+                                    width: 75%;
+                                    height: 75%;
+                                    object-fit: contain;
+                                    }
+                            </style>
+                             <img class="img-responsive portfolio-img"  src="images/kinectcheckers.png" alt="Kinect Checkers"
+                        </div> 
+
                             </a>
 
                             <div class="col-9">
