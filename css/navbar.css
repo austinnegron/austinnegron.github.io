@@ -1,3 +1,4 @@
+
 :root {
     --theme-color: #b64f5d;
     /*--theme-color: #a03d4a;*/
@@ -51,8 +52,6 @@ body {
 
 }
 
-
-
     animation: profile-content-fadein 1.25s;
 }
 
@@ -65,6 +64,26 @@ body {
     transform: none;
 
     animation: arrow-content-fadein 1.25s;
+}
+
+@keyframes left-content-fadein {
+    from { opacity: 0; transform: translateX(-1.5%);}
+    to   { opacity: 1; transform: translateX(0%);}
+}
+
+@keyframes profile-content-fadein {
+    from { opacity: 0; transform: translateX(-10%);}
+    to   { opacity: 1; transform: translateX(0%);}
+}
+@keyframes arrow-content-fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.subtext-content {
+    font-family: 'Overpass Mono';
+    font-size: 1.5rem;
+    color: var(--theme-color);
 }
 
 .section-header {
@@ -81,6 +100,7 @@ body {
 .about-section {
     /*background: #f0f0f0;*/
     background: #f5f5f5;
+    border:3px solid #73AD21;
 }
 .about-content {
     font-size: 1rem;
