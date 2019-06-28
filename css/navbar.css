@@ -108,3 +108,181 @@ body {
     margin-bottom: 4rem;
 }
 
+
+.projects-section {
+    /*background: #f0f0f0;*/
+    background: #ebebeb;
+}
+
+.portfolio-sorting {
+    margin-bottom: 0;
+    color:#353535;
+}
+.portfolio-sorting .active {
+    color: red;
+    /*color: var(--theme-color);*/
+}
+
+.portfolio-sorting > * {
+    margin-right: 2rem;
+
+
+#project-grid {
+    margin-top: 2rem;
+}
+
+.portfolio-item {
+    /*overflow: hidden;*/
+    /*border-radius: 10%;*/
+    margin: 0.25rem 0.25rem 0.25rem 0.25rem; /*top right bottom left*/
+}
+
+.portfolio-img {
+    /* This is the class used to control the size of the images. It would take a lot of effort to
+    make the images automatically resize in the container while continuing to work with shufflejs */
+    height: 7.5rem;
+    width: 7.5rem;
+    border-radius: 5%;
+}
+.portfolio-item a:hover::after {
+    opacity: 0; /*This overwrites the normal underline animation so it isn't shown on the image*/
+}
+
+.portfolio-item .portfolio-header:hover::after {
+    opacity: 1; /*This overwrites the normal underline overwriting animation so it is shown on the text (but still not on the image). Forgive me*/
+}
+
+.portfolio-subtext {
+    /*font-family: 'Overpass Mono';*/
+    /*font-size: 0.95rem;*/
+    color: #999999;
+    width: 100%;
+
+    margin-left: 0.3rem;
+}
+
+a::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    opacity: 0;
+    height: 0.15rem;
+    background: var(--theme-color);
+    position: absolute;
+    left: 0;
+    bottom: 0.25rem;
+
+    transition: 0.2s ease-in;
+}
+a:hover::after {
+    bottom: -0.05rem;
+    opacity: 1;
+}
+a:hover {
+    color:black;
+    text-decoration: none;
+}
+
+
+.popup {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    display: none; /* Start as invisible */
+    background:rgba(0, 0, 0, 0.75);
+
+    cursor: pointer;
+}
+
+.popup-inner {
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    max-width: 50rem; /* This will override width most desktop cases */
+
+    padding: 2rem 3rem 2rem 3rem; /* Center content in the popup (top right bottom left) */
+    position: absolute;
+
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 3px;
+    background: #fff;
+
+    transform: translate(-50%, -50%); /* Center the popup itself */
+    -webkit-transform: translate(-50%, -50%);
+
+    cursor: default;
+}
+
+/*.popup-close {*/
+    /*top: 0;*/
+    /*right: 0;*/
+    /*width: 30px;*/
+    /*height: 30px;*/
+    /*padding-top: 4px;*/
+
+    /*display: inline-block;*/
+    /*position: absolute;*/
+
+    /*font-family: 'Overpass Mono';*/
+    /*font-size: 20px;*/
+    /*line-height: 100%;*/
+
+    /*text-align: center;*/
+    /*border-radius: 100%;*/
+    /*background: rgba(0, 0, 0, 0.8);*/
+    /*color: #fff;*/
+
+    /*transition: ease 0.25s;*/
+
+    /*-webkit-transform: translate(50%, -50%);*/
+    /*transform: translate(50%, -50%);*/
+
+    /*cursor: pointer;*/
+/*}*/
+/*.popup-close:hover {*/
+    /*background: rgba(0, 0, 0, 1);*/
+/*}*/
+
+/*.popup-close:hover::after {*/
+    /*opacity: 0; !*This overwrites the normal underline animation so it isn't shown on the x*!*/
+/*}*/
+
+.popup-header {
+    font-family: 'Overpass';
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+
+    color: #505050;
+}
+
+.popup-image-landing {
+    margin-bottom: 1rem;
+}
+
+.popup-image-landing > * {
+    border-radius: 2.5%;
+}
+
+.popup-subtext {
+    margin-top: 1.75rem;
+    margin-bottom: 3rem;
+    color: #999999;
+}
+
+/*.popup-inner .link-box {*/
+    /*margin-top: 3rem;*/
+/*}*/
+
+.link-box .leftmost-link {
+    margin-right: 1.5rem
+}
+
+.link-box .nonleftmost-link {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
