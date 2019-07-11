@@ -86,17 +86,20 @@
                 </div>
                 <div class="col-1"></div>
 
-
+<!--Scroll Down Arrow --> 
             
-                 <!-- Scrolldown arrow -->
-                    <div id="scrollarrow" class="scrollarrow-fadein">
-                        <div class="scrollarrow-container">
-    
-                            <span class="arrow-left"></span>
-                            <span class="arrow-right"></span>
-                        </div>
-                                <!--<hr>-->
-                                <div class="about-content">
+                  <div id="scrollarrow" class="scrollarrow-fadein">
+                    <div class="scrollarrow-container">
+
+                        <span class="arrow-left"></span>
+                        <span class="arrow-right"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
   
 
     <!-- About -->
@@ -253,47 +256,7 @@
                 <div class="col"></div>
             </div>
         </div>
-
-
-        <!-- Kinect Checkers -->
-        <div class="popup" data-popup-close="popup-kinectcheckers" data-popup="popup-kinectcheckers">
-            <div class="popup-inner">
-                <div class="popup-images-landing">
-                    <img src="images/kinectcheckers.png" alt="AdSensible logo" style="width: 32%">
-                
-                </div>
-
-                <h1 class="popup-header">Xbox Kinect Checkers </h1>
-                <!-- Maybe add date here? -->
-                <hr>
-
-                <p class="popup-subtext">
-                    Checkers is a Chrome extension that blocks AdSense from determining your demographic info. It's run either passively or actively.
-
-                    <br><br>
-                    
-                    When run actively, a user selects a suggested demographic to add themselves to. Then, AdSensible performs relevant Google searches until the demographic is added to their profile. Under the hood, AdSensible takes the user's demographic, queries a Flask server which asks the DataMuse API for 100 similar words, then pipes the similar words into noun/verb search templates, which generates a search query. Ex.: "baking" --> "cooking club near me". We dealt with issues
-                    like rate-limiting, pinging ad-trackers without actually loading their page, and reverse-engineering AdSense.
-
-                    <br><br>
-
-                    I helped with the reverse-engineering and handled all the Chrome extension code. This involved passing data between background scripts, content_scripts, and browser_action scripts. I also designed the front end.
-
-                    <br><br>
-
-                    I built AdSensible in a team of three at HackRPI 2019, and it won 2nd Best Hack Overall, Best Data Privacy Hack, and a Wolfram Alpha award.
-                </p>
-
-                <hr>
-                <div class="link-box">
-                    <a class="leftmost-link" href="https://github.com/austinnegron/Kinect-Checkers" target="_blank">GitHub Repository</a>
-                    |
-                    <a class="nonleftmost-link" href="https://devpost.com/software/adsensible" target="_blank">Devpost Page</a>
-                </div>
-            </div>
-        </div>
-
-
+    </div>
  </footer>
 
 </body>
