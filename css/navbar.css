@@ -128,7 +128,17 @@ body {
 
 
 #project-grid {
-    margin-top: 2rem;
+
+left:800px;
+
+list-style-type:none;
+
+margin:0;
+
+padding:0 0 0 800px;
+
+text-transform:uppercase;
+
 }
 
 .portfolio-item {
