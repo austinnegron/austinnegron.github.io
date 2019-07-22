@@ -153,6 +153,7 @@ text-transform:uppercase;
     height: 3rem;
     width: 3rem;
     border-radius: 5%;
+    float:left;
 }
 .portfolio-item a:hover::after {
     opacity: 0; /*This overwrites the normal underline animation so it isn't shown on the image*/
