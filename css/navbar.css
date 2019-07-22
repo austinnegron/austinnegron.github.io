@@ -1,5 +1,5 @@
 
-:root {
+root {
     --theme-color: #b64f5d;
     /*--theme-color: #a03d4a;*/
     /*--theme-color: #2fb0de;*/
@@ -139,9 +139,9 @@ body {
 
 .portfolio-img {
     /* This is the class used to control the size of the images. It would take a lot of effort to
-    make the images automatically resize in the container while continuing to work with shufflejs */
+    make the images automaticallyresize in the container while continuing to work with shufflejs */
     height: 7.5rem;
-    width: 7.5rem;
+    width: 25%;
     border-radius: 5%;
 }
 .portfolio-item a:hover::after {
@@ -156,8 +156,7 @@ body {
     /*font-family: 'Overpass Mono';*/
     /*font-size: 0.95rem;*/
     color: #999999;
-    width: 100%;
-
+    width: 75%;
     margin-left: 0.3rem;
 }
 
