@@ -143,6 +143,8 @@ body {
     height: 7.5rem;
     width: 25%;
     border-radius: 5%;
+    float: left;
+    padding: 15px;
 }
 .portfolio-item a:hover::after {
     opacity: 0; /*This overwrites the normal underline animation so it isn't shown on the image*/
@@ -158,6 +160,9 @@ body {
     color: #999999;
     width: 75%;
     margin-left: 0.3rem;
+    float: left;
+    border: 1px solid red;
+    padding: 15px;
 }
 
 a::after {
